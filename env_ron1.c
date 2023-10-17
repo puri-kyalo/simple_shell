@@ -1,10 +1,9 @@
 #include "shell.h"
 
 /**
- * _myenv - prints the current environment
- * @info: Structure containing potential arguments. Used to maintain
- *          constant function prototype.
- * Return: Always 0
+ * _myenv - function that prints the current env.
+ * @info: is the struct containing potential arguments
+ * Return: 0 Always
  */
 int _myenv(info_t *info)
 {
@@ -13,11 +12,10 @@ int _myenv(info_t *info)
 }
 
 /**
- * _getenv - gets the value of an environ variable
- * @info: Structure containing potential arguments. Used to maintain
- * @name: env var name
- *
- * Return: the value
+ * _getenv - function that gets the value of an env var.
+ * @info: Structure containing potential args
+ * @name: is the environ variable name
+ * Return: the value.
  */
 char *_getenv(info_t *info, const char *name)
 {
@@ -35,11 +33,9 @@ char *_getenv(info_t *info, const char *name)
 }
 
 /**
- * _mysetenv - Initialize a new environment variable,
- *             or modify an existing one
- * @info: Structure containing potential arguments. Used to maintain
- *        constant function prototype.
- *  Return: Always 0
+ * _mysetenv - function that initialize a new env variable.
+ * @info: a struct containing potential args
+ *  Return: 0 Always
  */
 int _mysetenv(info_t *info)
 {
@@ -54,10 +50,9 @@ int _mysetenv(info_t *info)
 }
 
 /**
- * _myunsetenv - Remove an environment variable
- * @info: Structure containing potential arguments. Used to maintain
- *        constant function prototype.
- *  Return: Always 0
+ * _myunsetenv - a function that remove an env variable.
+ * @info: is the struct containing potential args
+ *  Return: 0 Always
  */
 int _myunsetenv(info_t *info)
 {
@@ -75,10 +70,9 @@ int _myunsetenv(info_t *info)
 }
 
 /**
- * populate_env_list - populates env linked list
- * @info: Structure containing potential arguments. Used to maintain
- *          constant function prototype.
- * Return: Always 0
+ * populate_env_list - function that populates environ linked list
+ * @info: a struct containing potential args
+ * Return: 0 Always.
  */
 int populate_env_list(info_t *info)
 {
